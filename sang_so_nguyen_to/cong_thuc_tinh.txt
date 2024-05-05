@@ -1,0 +1,5 @@
+Sàng số nguyên tố: tìm các số nguyên tố từ 1 đến N
+Thuật toán lọc nhanh các số nguyên tố trong khoảng từ 1 đến N
+Sử dụng 1 mảng để đánh dấu
+Bước 1: đánh dấu tất cả các giá trị  ứng với số nguyên tố trong mảng  = 1, đánh dấu a[0], a[1] = 0
+Bước 2: duyệt từ 2 đến căn(n), loại bỏ các bội của các số nguyên tố này

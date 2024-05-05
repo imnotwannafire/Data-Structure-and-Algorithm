@@ -1,0 +1,3 @@
+Tính a^b
+C1" thông thường" : dùng vòng lặp for O(N)
+C2: O(logN)
