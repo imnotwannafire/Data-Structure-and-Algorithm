@@ -1,0 +1,15 @@
+Điều kiện áp dụng: dãy sắp xếp tăng dần
+Tìm kiếm sự xuất hiện của 1 phần tử
+Độ phức tạp LogN
+Sử dụng api: binary_search(a, a+n, value)
+return true, false
+Không in ra được index, không sắp xếp dãy
+
+
+Sử dụng binary_search, kết hợp lower_bound, upper_bound;
+lower_bound: tìm vị trí của phần tử đầu tiên của phần tử lớn hơn hoặc bằng X trong 1 mảng tăng dần.
+Return: trả về con trỏ (mảng) hoặc iterator (vector)
+Nếu trong mảng không có giá trị nào lớn hơn x thì sẽ trả lại con trỏ ở vị trí a+n (vị trí liền kề với phần tử cuối cùng)
+Áp dụng được với set, map
+
+upper bound: >x
