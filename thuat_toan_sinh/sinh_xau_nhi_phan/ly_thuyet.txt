@@ -1,0 +1,13 @@
+Liet ke xau nhi phan co N bit
+4 bit 2^4 gia tri
+0000
+0001
+0010
+0100
+1000...1111
+Cau hinh dau tien: 4 bit 0
+Cau hinh cuoi cung: 4 bit 1
+-Thuat toan: đi tìm bit 0 đầu tiên tính từ bên phải. Trong quá trình đó, gặp bit 1 thì chuyển thành bit 0.
+
+VD: 0101111
+B1: Gap bit 1: chuyen thanh bit 0 -> gặp bit 0  thì chuyển thành 1 rồi dừng -> 0110000

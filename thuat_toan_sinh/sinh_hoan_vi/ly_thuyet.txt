@@ -1,0 +1,7 @@
+Bài toán sinh hoán vị (Next permutation)
+Cho tập N phần từ các số từ 1 đến N sẽ có N! hoán vị
+Chọn ra số kế tiếp gần nhất với số hiện tại
+Thuật toán:
+B1: duyệt từ n - 1 sao cho tìm được cặp a[i] < a[i+1]
+B2: Tìm số nhỏ nhất trong đoạn n -> a[i+1] mà lớn hơn a[i] -> hoán vị 2 số
+B3: sort đoạn số sau khi sort từ a[i+1] đến n

@@ -1,0 +1,5 @@
+thuật toán sinh là phương pháp vét cạn đượpc dùng với các bài toán liệt kê, đếm số lượng tổ hợp
+- Liệt kê xâu con
+- Liệt kê hoán vị
+- Liệt kê tập con
+- Sinh phân hoạch

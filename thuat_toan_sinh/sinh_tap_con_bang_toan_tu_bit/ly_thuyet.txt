@@ -1,0 +1,4 @@
+Biểu diễn các tập con của 1 tập có N phần tử
+Duyệt từ 0 đến 2^n-1 (1<<n)
+đối với mỗi số: 1 vòng for từ 0 đến n. Nếu i & 1<<j ==1 -> cout a[j]
+vì (1<<j) chỉ duy nhất bit số j = 1

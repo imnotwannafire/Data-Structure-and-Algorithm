@@ -1,0 +1,2 @@
+Phân tích N dưới dạng tổng các số tự nhiên nhỏ hơn hoặc bằng N không xét đến thứ tự
+Thuật toán: duyet tu n den 0, tim số có thể giảm được a[i]. Các số dằng sau cần bù N-a[i]/a[i]

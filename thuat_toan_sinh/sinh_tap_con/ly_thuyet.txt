@@ -1,0 +1,7 @@
+sinh tổ hợp chập k của n (tập con)
+cho so tu nhien tu 1 den N, liet ke các tập con có k phần tử của N phần tử theo thứ tự từ điển tăng dần
+Cau hinh dau tien bao gio cung  la  k so nho nhat
+Cau hinh cuoi cung là k số lớn nhất
+Tu tuong: di tim bit dau tien ma chua dat cuc dai tai vi tri cua no
+Giá trị cực đại được tính như sau: max = n - k + i
+
