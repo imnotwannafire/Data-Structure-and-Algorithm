@@ -1,0 +1,10 @@
+AA
+AB
+AC
+AD
+BB
+BC
+BD
+CC
+CD
+DD

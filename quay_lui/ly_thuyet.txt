@@ -1,0 +1,5 @@
+Áp dụng cho bài toán không cần biết cấu hình hiện tại
+Vét cạn tất cả các cấu hình
+Áp dụng đệ quy.
+Khó giải thích. Không thể chạy tay được
+Kỹ thuật cắt cành
