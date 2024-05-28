@@ -1,0 +1,9 @@
+- ma trận kề: duyệt nhanh, nhược điểm: bộ nhớ lớn
+- Danh sách cạnh: tiết kiệm bộ nhớ nếu đồ thị thưa, nhược điểm: khi cần biết các định kề với đỉnh nào đó phải duyệt tất cả các cạnh
+- Danh sách kề: dẽ dàng duyệt các đỉnh kề của 1 đỉnh, tối ưu về biểu diễn. Nhược điểm: khó khăn với người có kỹ thuật lập trình yếu.
+- Kiểm tra chu trình trên đồ thị vô hướng: DFS và BFS
+    + khái niệm back edge (cạnh ngược): từ con cháu đến tổ tiên (cách nhau ít nhất 1 đỉnh)
+    + Forward edge: đi từ đỉnh tổ tiên đến cạnh cháu (cách nhau ít nhất 1 đỉnh)
+    + Kiểm tra có chu trình tương đương kiểm tra cạnh ngược.
+    Nếu từ v mà mở rộng ra được đỉnh v đã được thăm rồi, mà V không phải cha trực tiếp của u thì u-v là cạnh ngược
+- Kiểm tra chu trình trên đồ thị có hướng: sử dụng dfs chuẩn

@@ -1,0 +1,9 @@
+Dùng queue
+Mảng visited đánh dấu
+Dùng vòng lặp thay vì dùng đệ quy.
+while (queue chưa rỗng)
+x = queue.front() -> xet các đỉnh kề với x, push vào queue => queue.pop()
+Sử dụng danh sách kề
+Thời gian lâu
+Bài toán tìm đường đi bằng duyệt BFS/DFS: 2 đỉnh có đường đi đến nhau nếu sau khi duyệt qua BFS/DFS từ 1 đỉnh mà visited đỉnh còn là true
+Áp dụng để tìm đường đi ngắn nhất giữa 2 đỉnh của đồ thị không có trọng số

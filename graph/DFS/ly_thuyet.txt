@@ -1,0 +1,13 @@
+Thăm đỉnh u
+DFS(u)
+{
+    visited[u]= true
+    for(int v:adj[u])
+    {
+        if(!visited[v]) DSF(v)
+    }
+}
+
+Dùng với danh sách kề là tốt nhất
+Dùng kết hợp stack
+
