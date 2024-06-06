@@ -4,8 +4,6 @@ using namespace std;
 using ll = long long;
 
 vector<int> ds_ke[1001];
-int matran_ke[1001][1001];
-vector<pair<int, int>> ds_canh;
 bool visited[1001];
 int n, m;
 
