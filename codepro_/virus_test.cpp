@@ -1,54 +1,50 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define int long long
-bool cmp(int a, int b)
+bool check(vector<int> var, vector<int> virus)
 {
-	return a>b;
-}
-void test_case(vector<int>& a, vector<int>& b,vector<int>& sub, int n , int m, int& ans)
-{
-	int cnt = 0;
-	for(int i = 0; i<= n-m; i++)
+	int len = var.size();
+	sort(var.begin(), var.end());
+	for(int i=1; i<len; i++)
 	{
-		vector<int> c(a.begin()+i, a.begin()+i+m);
-		sort(c.begin(), c.end(),cmp);
-		vector<int> sub1;
-		for(int i = 0; i < m-1; i++ )
+		if(var[i]-var[i-1]!=virus[i]-virus[i-1])
 		{
-			sub1.push_back(c[i] - c[i+1]);
+			return false;
 		}
-		if(sub1==sub)cnt++;
-
 	}
-	ans = cnt;
-
+	return true;
 }
-int32_t main()
+void solve()
 {
-	int n,m;
-	cin >> n >> m;
+	int n, m;
+	cin>>n>>m;
 	vector<int> a(n);
 	vector<int> b(m);
-	for(auto &x:a)
+	for(int& x: a)
 	{
 		cin >> x;
 	}
-	for(auto &x:b)
+	for(int& x:b)
 	{
-		cin >> x;
+		cin>>x;
 	}
-
-	// Sort virus in decrease order
-	sort(b.begin(), b.end(), cmp);
-	// Sub between 2 adjacent elemnts in virus => in order to compare with variants virus
-	vector<int> sub;
-	for(int i = 0; i < m-1; i++ )
+	sort(b.begin(), b.end());
+	// for(int x:b) cout<< x<< ' ';
+	// cout<<endl;
+	vector<int> tmp;
+	int ans=0;
+	for(int i=0; i<=n-m; i++)
 	{
-		sub.push_back(b[i] - b [i+1]);
+		tmp.assign(a.begin()+i, a.begin()+i+m);
+		// for(int x:tmp) cout<< x<< ' ';
+		// cout<<endl;
+		if(check(tmp,b)) ans++;
 	}
-	int ans = 0;
-	test_case(a,b,sub,n,m, ans);
-	cout << ans;
+	cout<< ans;
+}
 
+
+int main()
+{
+	solve();
 	return 0;
 }

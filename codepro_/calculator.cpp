@@ -48,11 +48,12 @@ string multiply(string S, string D, int B)
 		{
 		    //cout<< j<<endl;
 			int val = charToInt(S[i]) * charToInt(D[j]);
+
 			//cout<<"val: "<<val<<endl;
 			result[i+j] +=val;
 			result[i+j+1] += result[i+j]/B;
 			result[i+j] %=B;
-			//cout<<"result["<<i+j<<"]: "<<result[i+j]<<endl;
+			cout<<"result["<<i+j<<"]: "<<result[i+j]<<endl;
 			//cout<<"result["<<i+j+1<<"]: "<<result[i+j+1]<<endl;
 		}
 	}

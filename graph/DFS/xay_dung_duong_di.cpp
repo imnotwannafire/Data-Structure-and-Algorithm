@@ -4,8 +4,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int cnt = 0;
-vector<int> adj[1005];
-bool used[1005];
+vector<int> adj[100005];
+bool used[100005];
 vector<int> daidien;
 void dfs(int u)
 {
@@ -21,8 +21,8 @@ void dfs(int u)
 }
 int main()
 {
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+//    freopen("input.txt", "r", stdin);
+//    freopen("output.txt", "w", stdout);
     int n, m;
     cin >> n >> m;
 
